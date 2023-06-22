@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="display-5 mb-3 fw-bold">JavaScript Coding Quiz</h1> 
+      </header>
+
+      <div class="px-2 py-3 my-3 text-center custom-border">
+        <!-- Nav creation of timer -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <h4>Timer/Score: <span id="timer">0</span></h4>
+            </div>
+        </nav>
+
+          <!-- Question which changes with each question -->
+        <h3 class="display-5 mb-3 fw-bold" id="question">JavaScript Quiz</h3>
+
+        <!-- Options for questions -->
+        <div class="d-flex flex-column col-lg-6 mx-auto">
+            <button type="button" id="MC1" class="MC1 question btn text-light bg-dark btn-lg btn-block mb-2">MC 1</button>
+            <button type="button" id="MC" class="MC2 question btn text-light bg-dark btn-lg btn-block mb-2">MC 2</button>
+            <button type="button" id="MC3" class="MC3 question btn text-light bg-dark btn-lg btn-block mb-2">MC 3</button>
+            <button type="button" id="MC4" class="MC4 question btn text-light bg-dark btn-lg btn-block mb-2">MC 4</button>
+        </div>
+
+        <!-- scores -->
+        <div class="scoreContainer mb-3">
+          <h1 class="scoreContainer display-5 fw-bold">Please Input Initials Here!</h1>            
+          <textarea class="scoreContainer form-control" id="Initial" rows="3"></textarea>
+          <a href="Scores.html" type="button" id="submit" class="btn btn-primary btn-lg mt-3">Submit</a>
+      </div>
+
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">    
+        <a href="index.html" class="btn start-game btn-primary btn-lg px-4 gap-3">Home</a>
+    </div>    
+
+    </div>
+    <script src="LoadQuestions.js"></script>
+  </body>
+</html>
